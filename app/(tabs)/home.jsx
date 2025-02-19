@@ -10,11 +10,9 @@ const Home = () => {
 
 
     renderTransaction = ({ item }) => (
-        console.log(item),
-
         <Pressable
             key={item.id}
-            onPress={() => router.push("/detail-transactions")}
+            onPress={() => router.push(`/detail-transactions/${item.id}`)}
             className="flex flex-row items-center gap-2.5 w-full mb-4"
         >
             <View className="bg-[#F0F6F5] p-2 rounded-lg flex-none items-center justify-center w-16 h-16">

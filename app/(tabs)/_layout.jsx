@@ -40,6 +40,7 @@ const TabsLayout = () => {
                     },
                     headerShown: false,
                 }}
+                backBehavior="history"
             >
                 <Tabs.Screen
                     name="home"
