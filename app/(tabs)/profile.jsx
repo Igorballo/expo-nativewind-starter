@@ -43,7 +43,7 @@ const Profile = () => {
                 <View className="flex flex-col gap-4 px-10 mt-2">
                     <View className="border-b border-[#EEEEEE] pb-4">
                         <TouchableOpacity
-                            onPress={() => { router.push('/home') }}
+                            // onPress={() => { router.push('/home') }}
                             activeOpacity={0.8}
                             className='flex flex-row items-center justify-between'
                         >

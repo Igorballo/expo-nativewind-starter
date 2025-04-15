@@ -55,6 +55,12 @@ const TabsLayout = () => {
                                 focused={focused}
                             />
                         ),
+                        tabBarButton: (props) => (
+                            <TouchableOpacity
+                                activeOpacity={1}
+                                {...props}
+                            />
+                        ),
                     }}
                 />
                 <Tabs.Screen
@@ -68,6 +74,12 @@ const TabsLayout = () => {
                                 color={color}
                                 name="Statistic"
                                 focused={focused}
+                            />
+                        ),
+                        tabBarButton: (props) => (
+                            <TouchableOpacity
+                                activeOpacity={1}
+                                {...props}
                             />
                         ),
                     }}
@@ -85,6 +97,12 @@ const TabsLayout = () => {
                                 focused={focused}
                             />
                         ),
+                        tabBarButton: (props) => (
+                            <TouchableOpacity
+                                activeOpacity={1}
+                                {...props}
+                            />
+                        ),
                     }}
 
                 />
@@ -92,7 +110,8 @@ const TabsLayout = () => {
                     name="profile"
                     options={{
                         title: "Profile",
-                        headerShown: false, tabBarIcon: ({ color, focused }) => (
+                        headerShown: false,
+                        tabBarIcon: ({ color, focused }) => (
                             <TabIcon
                                 icon={icons.user}
                                 color={color}
@@ -100,23 +119,30 @@ const TabsLayout = () => {
                                 focused={focused}
                             />
                         ),
+                        tabBarButton: (props) => (
+                            <TouchableOpacity
+                                activeOpacity={1}
+                                {...props}
+                            />
+                        ),
                     }}
                 />
 
                 <Tabs.Screen
-                    name="detail-transactions"
+                    name="detail-transactions/[id]"
                     options={{
                         href: null,
                         headerShown: false,
-                        title: "Détail transaction",
-                        tabBarIcon: ({ color, focused }) => (
-                            <TabIcon
-                                icon={icons.statistic}
-                                color={color}
-                                name="detail-transactions"
-                                focused={focused}
-                            />
-                        ),
+                        // title: "Détail transaction",
+                        // tabBarStyle: { display: "none" },
+                        // tabBarIcon: ({ color, focused }) => (
+                        //     <TabIcon
+                        //         icon={icons.statistic}
+                        //         color={color}
+                        //         name="detail-transactions"
+                        //         focused={focused}
+                        //     />
+                        // ),
                     }}
                 />
             </Tabs>

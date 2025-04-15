@@ -29,9 +29,11 @@ import shopify from "../assets/icons/shopify.png"
 import energy from "../assets/icons/energy.png"
 import house from "../assets/icons/house.png"
 import upwork1 from "../assets/icons/upwork-1.png"
+import download from "../assets/icons/download.png"
+import chevron from "../assets/icons/chevron.png"
 
 export default {
     home, wallet, profile, statistic, bell, upwork, paypal, youtube, girl1, user1, user2, user3, user4, menu, uparrow, downarrow,
     arrow, badge, user, users, mail, lock, glossy, diamond, add, qrCode, share, shopify, energy, house,
-    upwork1
+    upwork1, download, chevron
 };
