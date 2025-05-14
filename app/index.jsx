@@ -50,7 +50,7 @@ const App = () => {
                         Log In
                     </Link>
                 </View>
-                <StatusBar backgroundColor='black' style='light' />
+                <StatusBar backgroundColor='black' style='white' />
             </ScrollView>
         </SafeAreaView>
     )
